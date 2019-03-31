@@ -1,0 +1,28 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: white;
+}
+.scaleDown {
+    width: 250px;
+    padding-left: 1%;
+    transition: .5s;
+}
+
+.headingSections {
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 2px;
+    color: orange;
+}
+.scaleDown:hover {
+    transform: scale(1.1)
+
+}
+
+table {
+    border: 1px solid black;
+}
