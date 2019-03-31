@@ -6,20 +6,30 @@ document.getElementById('b3').addEventListener('click', getApi);
 
 //b1
 
-function getText(e) {
-    fetch("text.txt")
-    .then(function(res){
-        return res.text();
-    })
-    .then(function(data){
-        // console.log(data);
-        document.getElementById('textOutput').innerText = `
-            ${data}
-        `
-    })
-    .catch(function(err){
-        console.log(err);
-    })
+// function getText(e) {
+//     fetch("text.txt")
+//     .then(function(res){
+//         return res.text();
+//     })
+//     .then(function(data){
+//         // console.log(data);
+//         document.getElementById('textOutput').innerText = `
+//             ${data}
+//         `
+//     })
+//     .catch(function(err){
+//         console.log(err);
+//     })
+// }
+
+//shortened with arrow function
+function getText() {
+    fetch(`text.txt`)
+        .then(res => res.text())
+        .then((data)=> {
+            document.getElementById('textOutput').innerText = `${data}`
+        })
+        .catch(err => console.log(err))
 }
 
 //b2
