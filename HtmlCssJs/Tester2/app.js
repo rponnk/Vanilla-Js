@@ -22,6 +22,13 @@ class UI {
         userData.appendChild(lis);
     }
 
+    clearFields() {
+        document.getElementById('fname').value = '';
+        document.getElementById('mname').value = '';
+        document.getElementById('lname').value = '';
+        document.getElementById('email').value = '';
+    }
+
     deleteUser(x) {
         if(x.className === 'delete') {
             x.parentElement.parentElement.remove();
@@ -41,9 +48,11 @@ let userForm = document.getElementById('userInput').addEventListener('submit', f
 
     const ui = new UI();
 
-    ui.addUser(newPerson);
-    
-
+    if(fname === '' || lname === '') {
+    } else {
+        ui.addUser(newPerson);
+        ui.clearFields();
+    }
     e.preventDefault();
 });
 

@@ -8,35 +8,34 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css'>
 </head>
 <body>
-<h1>Tester 2</h1>
+<h1>User Library</h1>
+<span id='alertMes'></span>
 <div>
 <!-- Create a form     -->
-    <form id='userInput'>
-        <label for='fname'></label>
+    <form id='userInput' action="#">
+        <label for='fname'>First Name:</label>
         <input type='text' id='fname' placeholder="first name">
 
-        <label for='mname'></label>
+        <label for='mname'>Middle Name:</label>
         <input type='text' id='mname' placeholder="middle name">
 
-        <label for='lname'></label>
+        <label for='lname'>Last Name:</label>
         <input type='text' id='lname' placeholder="last name">
 
-        <label for='email'></label>
+        <label for='email'>Email</label>
         <input type='email' id='email' placeholder="email">
         <button>Submit</button>
     </form>
 </div>
 
 <div>
-        <table>
-                <thead>
-                    <th>Name</th>
-                    <th>Email</th>
-                </thead>
-                <tbody id='userData'> 
-
-                </tbody>
-            </table>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+        </thead>
+            <tbody id='userData'> </tbody>
+    </table>
 </div>
 
 
